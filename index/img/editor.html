@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>Simple example - Editor.md examples</title>
+        <link rel="stylesheet" href="../../assets/editor/css/editormd.min.css" />      
+    </head>
+    <body>
+        <div id="layout">
+            <div id="test-editormd">
+                <textarea style="display:none;"></textarea>
+            </div>
+        </div>
+        <script src="../../assets/editor/jquery.min.js"></script>
+        <script src="../../assets/editor/editormd.min.js"></script>
+        <script type="text/javascript">
+			var testEditor;
+
+            $(function() {
+                testEditor = editormd("test-editormd", {
+                	placeholder : "开始编辑...",  
+                    width   : "90%",
+                    height  : 640,
+                    syncScrolling : "single",
+					saveHTMLToTextarea : true,//获取html 
+                    imageUpload: false,//图片上传功能  
+                    path    : "../../assets/editor/lib/", 
+                    emoji: true,
+					watch : false,//关闭实时预览
+					syncScrolling: true,
+                    tocDropdown   : true,
+					htmlDecode   : true,			
+                    tocTitle      : "目录 Table of Contents",					
+                    toolbarIcons : function() {  
+                // Or return editormd.toolbarModes[name]; // full, simple, mini  
+                // Using "||" set icons align right.  
+                return ["undo","redo","|","bold","italic","quote","uppercase","lowercase","|","h1","h2","h3","h4","|","list-ul","list-ol","hr","|","link","image","testIcon","code","code-block","table","html-entities","|","watch","preview","fullscreen","clear","|","help"]  
+            }, 
+				toolbarIconsClass : {
+                    testIcon : "fa-file-image-o"  // 指定一个FontAawsome的图标类
+                 },
+                    toolbarHandlers : {
+                        /**
+                         * @param {Object}      cm         CodeMirror对象
+                         * @param {Object}      icon       图标按钮jQuery元素对象
+                         * @param {Object}      cursor     CodeMirror的光标对象，可获取光标所在行和位置
+                         * @param {String}      selection  编辑器选中的文本
+                         */
+                        testIcon : function(cm, icon, cursor, selection) {
+                            
+                            //var cursor    = cm.getCursor();     //获取当前光标对象，同cursor参数
+                            //var selection = cm.getSelection();  //获取当前选中的文本，同selection参数
+                            
+                            // 替换选中文本，如果没有选中文本，则直接插入
+                            cm.replaceSelection("<div class=\"tp\">" + "\n"+"<div></div>" + "\n" + selection + "</div>");
+                            
+                            // 如果当前没有选中的文本，将光标移到要输入的位置
+                            if(selection === "") {
+                                cm.setCursor(cursor.line, cursor.ch + 0);
+                            }
+                            
+                            // this == 当前editormd实例
+                            console.log("testIcon =>", this, cm, icon, cursor, selection);
+                        },		
+                    },	
+                    lang : {
+                        toolbar : {
+                            testIcon : "多图插入",  // 自定义按钮的提示文本，即title属性
+                        }
+                    },				
+                });
+                $("#goto-line-btn").bind("click", function(){	//回到第一行
+                    testEditor.gotoLine(1);
+                });				
+				testEditor.fullscreen();
+                $("#get-html-btn").bind('click', function() {	//获取html
+                    alert(testEditor.getHTML());
+                });  
+                $("#get-md-btn").bind('click', function(){	//获取markdown
+                    alert(testEditor.getMarkdown());
+                });
+                $("#watch-btn").bind('click', function() {	//清空内容 
+                    testEditor.clear();
+                });  	
+                /*
+                // or
+                testEditor = editormd({
+                    id      : "test-editormd",
+                    width   : "90%",
+                    height  : 640,
+                    path    : "./lib/"
+                });
+                */
+            });
+        </script>
+    </body>
+</html>

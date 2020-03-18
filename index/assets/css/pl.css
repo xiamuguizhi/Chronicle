@@ -1,0 +1,50 @@
+﻿.valine .vinputs-area .vextra-area{
+	margin: 0 !important;  /* 去除div高度 */
+}
+.valine .vinputs-area .textarea-wrapper{
+	width:auto;
+	height:auto;
+}
+.vinputs-area {
+	border-radius:7px; /* 边框圆形 */
+}
+
+.valine .info .col{
+	background:none; /* 评论数背景颜色 */
+}
+
+/* 
+.valine .vlist .vcard .vcomment-body:hover .vat {
+	background: none !important; 去除回复经过时背景颜色 
+}
+*/
+
+.vcard{
+	background: #fff;	
+	border-radius:7px; /* 边框圆形 */
+	padding: 0.1px
+}
+.valine .vlist .vcard .vcomment-body{
+	padding: 25px 25px;	
+}
+.valine .vinputs-area .vextra-area .vsmile-icons{  /* 表情框 */
+	max-height: 100px;
+}
+
+.valine .vinputs-area .auth-section .post-action button{
+	background-color:#333;
+	border-radius: 3px;
+	color:#f7f7f7
+}
+.valine .vemoticon-img{
+	max-height: none;  /* 评论表情大小不限制 */
+}
+
+.valine .vinputs-area .auth-section .post-action button:hover {
+	background: #7A7A7A;
+	color:#FFF
+	
+}
+        @media screen and (max-width: 600px) {
+          .valine .vlist .vcard .vcomment-children {
+            border-left: none;

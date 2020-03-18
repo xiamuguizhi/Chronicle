@@ -1,0 +1,21 @@
+          <div class="vcomment"></div>
+          <script src="https://cdn.jsdelivr.net/npm/valine"></script>
+          
+          <!-- <script src="/script/Valine.min.js"></script>   -->
+          <script>
+            var valine = new Valine();
+            var path = window.location.pathname.replace('index.html','');
+            var isEN = path.indexOf('en') > -1;
+            path = isEN ? path.replace('en/','') : path;
+            valine.init({
+                el: '.vcomment',
+                appId: '3GiiCyXCrGbOIH3EelCfJ6yw-gzGzoHsz',
+                appKey: 'iuneD4hXPQImdHQSRE0aOcRF',
+                notify: true,
+                placeholder: 'Just Go Go.',
+                avatar:'mm',
+                path:path,
+                lang: isEN ? 'en' : 'zh-cn',
+                visitor:true
+            })
+          </script>

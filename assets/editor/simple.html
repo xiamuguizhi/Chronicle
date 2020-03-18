@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>Simple example - Editor.md examples</title>
+        <link rel="stylesheet" href="css/editormd.min.css" />      
+    </head>
+    <body>
+        <div id="layout">
+            <div id="test-editormd">
+                <textarea style="display:none;"></textarea>
+            </div>
+        </div>
+        <script src="jquery.min.js"></script>
+        <script src="editormd.min.js"></script>
+        <script type="text/javascript">
+			var testEditor;
+
+            $(function() {
+                testEditor = editormd("test-editormd", {
+                	placeholder : "开始编辑...",  
+                    width   : "90%",
+                    height  : 640,
+                    syncScrolling : "single",
+					saveHTMLToTextarea : true,//获取html 
+                    imageUpload: false,//图片上传功能  
+                    path    : "./lib/", 
+                    emoji: true,
+					watch : false,//关闭实时预览
+					syncScrolling: true,
+                    tocDropdown   : true,
+					htmlDecode : "style,script,iframe|on*",					
+                    tocTitle      : "目录 Table of Contents",					
+                    toolbarIcons : function() {  
+                // Or return editormd.toolbarModes[name]; // full, simple, mini  
+                // Using "||" set icons align right.  
+                return ["undo","redo","|","bold","italic","quote","uppercase","lowercase","|","h1","h2","h3","h4","|","list-ul","list-ol","hr","|","link","image","code","code-block","table","html-entities","|","watch","preview","fullscreen","clear","|","help"]  
+            },  
+                });
+                $("#goto-line-btn").bind("click", function(){	//回到第一行
+                    testEditor.gotoLine(1);
+                });				
+				testEditor.fullscreen();
+                $("#get-html-btn").bind('click', function() {	//获取html
+                    alert(testEditor.getHTML());
+                });  
+                $("#get-md-btn").bind('click', function(){	//获取markdown
+                    alert(testEditor.getMarkdown());
+                });
+                $("#watch-btn").bind('click', function() {	//清空内容 
+                    testEditor.clear();
+                });  	
+                /*
+                // or
+                testEditor = editormd({
+                    id      : "test-editormd",
+                    width   : "90%",
+                    height  : 640,
+                    path    : "./lib/"
+                });
+                */
+            });
+        </script>
+    </body>
+</html>

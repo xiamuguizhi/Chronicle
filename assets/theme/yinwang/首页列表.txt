@@ -1,0 +1,5 @@
+        <li class="list-group-item title">
+            <div class="date">【发布时间】</div>
+            【文章链接】
+			<div class="word-count">(【文章字数】)</div>
+        </li>

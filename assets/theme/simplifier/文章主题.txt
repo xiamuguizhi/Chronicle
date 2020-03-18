@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>【文章标题】 - 【网站标题】</title>
+	<style>
+	body{word-break:break-all;word-wrap:break-word;text-align:justify}img{max-width:100%}pre{background:#f7f7f7;margin:1.25rem 0;padding:.9375rem;overflow:auto;color:#4d4d4c;line-height:1.75}pre code{background:0;text-shadow:none;padding:0;margin:0}blockquote{padding:0 15px;color:#666;border-left:4px solid #ddd}table{width:100%;display:table;border-spacing:2px;margin:20px 0;letter-spacing:0}td,th{display:table-cell;padding:5px;text-align:center}th{background:#DDD}td{background:#EEE;text-align:left;padding:5px 10px;font-size:14px}tr:hover td{background:#ffa}#top{position:fixed;bottom:80px;right:30px;opacity:1;cursor:pointer}h1:before,h2:before,h3:before{content:'# ';color:#000}
+	</style>
+	<meta name="keywords" content="【网站关键词】" />
+    <meta name="description" content="【文章页面描述】" />	
+
+ </head>
+
+ <body name="top">
+ 
+ <tt>
+	<p>【网站标题】.</p> 
+ 
+	<hr>
+	<a href="http://localhost/" >首页</a>	
+	– <a href="http://localhost/index.php/page-collection/" >作品</a>
+	– <a href="http://localhost/index.php/page-youren-family/" >友人</a>
+	– <a href="http://localhost/index.php/start-page/" >关于</a>
+
+	<hr>
+ 
+<article>
+
+<h2>【文章标题】</h2>
+
+【文章内容】
+
+</article>
+ 
+ <hr>
+ 最后更新于 【最后更新时间】.<br>
+ Contact me at 【联系邮箱】.
+ <a href="javascript:window.scrollTo( 0, 0 );" target="_self" id="top">回到顶部</a>
+ </tt>
+ </body>
+</html>

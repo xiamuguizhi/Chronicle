@@ -1,0 +1,98 @@
+﻿	*{
+    list-style: none;
+	}
+	.tp{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.tp div a{
+ 	   border-bottom: none;
+	}	
+	.a_css {
+		border-bottom: none !important;
+	}
+	.reference-link{
+		border-bottom: none !important;
+	}
+	.tp div{
+		width: 20%;
+		display: inline-block;
+		flex-grow: 1;
+		margin:4px		
+	}
+	.tp div img{
+		width: 100%;
+	}
+	@media screen and (max-width:1000px){
+		.tp div{
+			width: 25%;
+		}
+	}
+	@media screen and (max-width:800px){
+		.tp div{
+			width:33.33%;
+		}
+	}
+	@media screen and (max-width:600px){
+		.tp div{
+			width: 50%;
+		}
+	}
+	@media screen and (max-width:400px){
+		.tp div{
+			width: 100%;
+		}
+	}
+	
+	.pager {
+	text-align: center;
+	margin: 2em 0 0;
+}
+
+
+.pager a {
+	padding: 1em 0;
+	display: inline-block;
+	white-space:nowrap;
+	overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.pager a.pre, .pager span.pre {
+	width: 35%;
+	padding-left: 5%;
+}
+
+.pager a.pre::before, .pager span.pre::before {
+	content: "‹";
+	font-size: 1.3em;
+	padding-right: 5px;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+.pager a.next, .pager span.next {
+	width: 35%;
+	padding-right: 5%;
+}
+
+.pager a.next::after, .pager span.next::after {
+	content: "›";
+	font-size: 1.3em;
+	padding-left: 5px;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+.pager span {
+	display: inline-block;
+	color: #bbb;
+	padding: 1em 0;
+	width: 10%;
+}
+
+.pager .paginator a {
+	padding: 1em 0.5em;
+}

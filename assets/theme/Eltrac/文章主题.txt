@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta name="HandheldFriendly" content="true" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+  <title>【文章标题】 - 【网站标题】</title> 
+  <meta name="twitter:description" content="【文章页面描述】" /> 
+  <meta name="twitter:card" content="summary" /> 
+  <meta name="twitter:image" content="" /> 
+  <link rel="icon" type="image/png" href="【首页地址】favicon.ico" /> 
+  <meta name="keywords" content="【网站关键词】" /> 
+  <script>var meting_api="https://guhub.cn/action/metingapi?server=:server&type=:type&id=:id&auth=:auth&r=:r";</script> 
+  <!-- css --> 
+  <link rel="stylesheet" href="https://guhub.cn/usr/themes/Miracles/assets/css/codestyle.css" />
+  <link rel="stylesheet" href="https://guhub.cn/usr/themes/Miracles/assets/css/owo.min.css" />
+  <link rel="stylesheet" href="https://guhub.cn/usr/themes/Miracles/assets/css/nprogress.css" />
+  <link rel="stylesheet" href="https://guhub.cn/usr/themes/Miracles/assets/css/fancybox.css" />
+  <link rel="stylesheet" href="https://guhub.cn/usr/themes/Miracles/assets/css/main/miracles.min.css" /> 
+    <script type="text/javascript" src="https://s3.pstatp.com/cdn/expire-1-M/jquery/1.11.1/jquery.min.js"></script>
+  	<link rel="stylesheet" href="https://i.xiamuyourenzhang.cn/jquery.fancybox.min.css">
+	<script src="https://i.xiamuyourenzhang.cn/jquery.fancybox.min.js"></script>
+	<script src="https://i.xiamuyourenzhang.cn/jquery.scrollLoad.min.js"></script>	
+	<script src="../../assets/js/jquery.site-search.js"></script>	
+  <!-- icon font --> 
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1165190_n6ylpatlse.css" /> 
+  <!-- Google Fonts --> 
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300|Noto+Serif+SC:300&amp;display=swap" rel="stylesheet" /> 
+  <style>.body-dark .pio-action .pio-home{background-image: url(https://guhub.cn/usr/themes/Miracles/images/icons/home.png);}.body-dark .pio-action .pio-close{background-image: url(https://guhub.cn/usr/themes/Miracles/images/icons/remove.png);}.body-dark .pio-action .pio-skin{background-image: url(https://guhub.cn/usr/themes/Miracles/images/icons/skin.png);}.body-dark .pio-action .pio-info{background-image: url(https://guhub.cn/usr/themes/Miracles/images/icons/info.png);}.body-dark .pio-action .pio-night{background-image: url(https://guhub.cn/usr/themes/Miracles/images/icons/night.png);}@media (min-width:992px) {.search{background-image:url(https://guhub.cn/usr/themes/Miracles/images/search.png);}.login{background-image:url(https://guhub.cn/usr/themes/Miracles/images/login.png)}}.search {background-position: bottom right;background-repeat: no-repeat}.login {background-position: bottom left;background-repeat:no-repeat}.index-banner {
+    background-color: #f1f1f1!important
+}</style> 
+ </head> 
+ <body class=" body-contentsize-small"> 
+  <div class="mask" id="full-mask"></div> 
+  <!-- 搜索 --> 
+  <div class="search ready"> 
+   <button class="search-close ready" id="search-close-button"><i class="iconfont icon-x"></i></button> 
+   <form method="post" action="" role="search" id="search_form" data-url="【首页地址】search.xml"> 
+    <div class="search-form"> 
+     <input type="text" class="text" size="32" placeholder="关键字" name="search" id="search" value=""/> 
+     <button type="submit" class="submit" id="search_submit" onclick="mycheck()" role="button">搜索</button> 
+    </div> 
+   </form> 
+  </div> 
+  <!-- 登录面板 --> 
+  <div class="login ready"> 
+   <button class="login-close ready" id="login-close"><i class="iconfont icon-x"></i></button> 
+   <form action="https://guhub.cn/index.php/action/login?_=0aea1a7be9028c207b5514c1b26f6e02" id="login-form" method="post" name="login" role="form" class="login-form"> 
+    <h1>登录后台</h1> 
+    <input type="text" name="name" autocomplete="username" placeholder="请输入用户名" required="" /> 
+    <input type="password" name="password" autocomplete="current-password" placeholder="请输入密码" required="" /> 
+    <input type="hidden" name="referer" value="https://guhub.cn/" /> 
+    <button class="btn btn-normal" type="submit">登录</button> 
+   </form> 
+  </div> 
+  <!-- 移动端导航面板 --> 
+  <div class="mobile-menu ready"> 
+   <button class="mobile-menu-close ready" id="toggle-mobile-menu-close"><i class="iconfont icon-x"></i></button> 
+   <h2 class="mobile-menu-title">页面导航</h2> 
+   <div class="mobile-menu-pagelist">
+    <div class="container-fluid">
+     <div class="row"> 
+      <div class="col-6">
+       <a href="【首页地址】article/3.html">关于</a>
+      </div>
+      <div class="col-6">
+       <a href="【首页地址】article/4.html">作品</a>
+      </div>
+      <div class="col-6">
+       <a href="【首页地址】article/5.html">友人</a>
+      </div>
+      <div class="col-6">
+       <a href="【首页地址】atom.xml" target="_blank">订阅</a>
+      </div>
+     </div>
+    </div>
+   </div> 
+   <div class="mobile-menu-footer"> 
+    <p>&copy; 2020 <a href="https://guhub.cn/">Eltrac's</a> | Theme <a href="https://github.com/BigCoke233/miracles">Miracles</a></p> 
+   </div> 
+  </div> 
+  <!-- -小屏幕导航 --> 
+  <nav class="small-screen nav nav-mobile nav-fixed" id="navBarMobile"> 
+   <div class="nav-mobile-content"> 
+    <a href="https://guhub.cn/" style="float:left"><i class="iconfont icon-xuanzhongshangcheng"></i></a> 
+    <a id="search-open-mobile" style="float:left"><i class="iconfont icon-chaxun"></i></a> 
+    <a id="login-open-mobile" style="float:left"><i class="iconfont icon-user"></i></a> 
+    <a id="toggle-dark-mobile" style="float:left"><i class="iconfont icon-moon"></i></a> 
+    <a id="toggle-mobile-menu-button" style="float:right">MENU <i class="iconfont icon-list"></i></a> 
+   </div> 
+  </nav> 
+  <!-- 导航 --> 
+  <!-- -大屏幕导航 --> 
+  <nav class="large-screen nav nav-fixed" id="navBar"> 
+  <div class="container"> 
+   <p class="nav-content"> <a href="【首页地址】" class="nav-title">【网站标题】</a> 
+   <span class="nav-content-item"> 
+   <a href="【首页地址】article/3.html">关于</a>
+   <a href="【首页地址】article/4.html">作品</a>
+   <a href="【首页地址】article/5.html">友人</a>
+   <a href="【首页地址】atom.xml" target="_blank">订阅</a>
+   </span>
+   </p> 
+   <button class="nav-icon-button search-button" id="search-open-button"><i class="iconfont icon-chaxun"></i></button> 
+   <button class="nav-icon-button login-button" id="login-open"><i class="iconfont icon-user"></i></button> 
+   <button class="nav-icon-button setting-button" id="toggle-dark-button"><i class="iconfont icon-moon"></i></button> 
+  </div> 
+  </nav>
+    <div id="pjax-container">
+      <!-- 开始 pjax-container -->
+      <header  id="search1">
+        <!-- Banner -->
+        <div class="index-banner" style="background-position:center;background:url('【文章封面】') no-repeat;height:70vh;background-size:cover;">
+          <!-- 遮罩 -->
+          <div class="banner-mask">
+            <div class="main-container container">
+              <div class="banner-content" id="banner-content">
+                <h1>【文章标题】</h1>
+                <p class="header-meta">
+                  <i class="iconfont icon-block" title="文章字数2"></i>
+                  【文章字数2】字&emsp;
+                  <i class="iconfont icon-clock" title="该文章发布于【发布时间2】"></i>【发布时间】&emsp;
+            </div>
+          </div>
+        </div>
+      </header>
+      <br>
+      <br>
+      <br>
+      <main class="main-container container">
+        <div class="post-body">
+          <div class="post-content" id="post-content">
+            <!-- 文章内容 -->
+            <div class="tip blue" id="reading-time-alert" style="display:none!important">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-1 tip-icon">
+                    <i class="iconfont icon-info"></i>
+                  </div>
+                  <div class="col-11 tip-content" id="readTip"></div>
+                </div>
+              </div>
+            </div>
+           【文章内容】
+          </div>
+          <div class="post-footer">
+            <!-- 文章页脚 -->
+            <div class="post-share">分享至：
+              <a class="social-share qq" target="_blank" href="https://connect.qq.com/widget/shareqq/index.html?url=【文章链接3】&title=【文章标题】&summary=【文章页面描述】" title="分享至 QQ 好友">
+                <i class="iconfont icon-qq1-copy"></i></a>
+              <a class="social-share weibo" target="_blank" href="http://service.weibo.com/share/share.php?url=【文章链接3】/&appkey=【网站标题】/&title=【文章页面描述】" title="分享至新浪微博">
+                <i class="iconfont icon-weibo-copy"></i>
+              </a>
+              <a class="social-share copyright" onclick="alertSend('文章未声明即为原创，转载请注明原作者')">
+                <i class="iconfont icon-info1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+    <!-- 结束 pjax-container -->
+  <!-- 结束 pjax-container --> 
+  <!-- Footer Information --> 
+  <footer> 
+   <div class="footer-info footer-dark"> 
+    <p class="copyright">Powered by <a href="https://xiamuyourenzhang.cn/article/2.html">Chronicle 静态博客生成器</a> | Theme <a href="https://guhub.cn/p/miracles.html">Miracles</a> by <a href="https://guhub.cn">Eltrac</a><br /> Copyright &copy; 2020 Eltrac's</a>, All rights reserved.<br /> 记录已延续了 <span id="build-time"></span></p> 
+   </div> 
+  </footer> 
+  <!-- Raised Buttons --> 
+  <div class="fixed-tools"> 
+   <button title="返回顶部" class="fixed-button gotop-button" id="gotop"><i class="iconfont icon-chevron-up"></i></button> 
+  </div> 
+  <!-- JavaScript --> 
+  <script src="https://guhub.cn/usr/themes/Miracles/assets/js/nprogress.js"></script>
+  <script src="https://guhub.cn/usr/themes/Miracles/assets/js/OwO.min.js"></script>
+  <script src="https://guhub.cn/usr/themes/Miracles/assets/js/highlight.js"></script>
+  <script src="https://guhub.cn/usr/themes/Miracles/assets/js/highlight-line-number.js"></script>
+  <script src="https://guhub.cn/usr/themes/Miracles/assets/js/pangu.js"></script> 
+
+  <!-- Script that must be after--> 
+  <script src="https://guhub.cn/usr/themes/Miracles/assets/js/comment.ajax.js"></script> 
+  <script src="../assets/js/miracles.min.js" type="text/javascript"></script>
+  <!-- BuildTime --> 
+  <script>
+	startTime("2016-4-16");	</script> 
+  <!-- Send News and Loaders --> 
+  <script></script> 
+  <!-- Others --> 
+  	<script src="../../assets/js/fantasy-search1.js"></script>	
+  <script type="text/javascript" src="https://guhub.cn/usr/plugins/Meting/assets/Meting.min.js?v=2.1.2"></script>   
+ </body>
+</html>

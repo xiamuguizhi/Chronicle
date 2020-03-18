@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>【文章标题】 - 【网站标题】</title>
+    <meta name="keywords" content="【网站关键词】" />
+    <meta name="description" content="【文章页面描述】" />
+    <!-- DNS预解析 -->
+    <link rel='dns-prefetch' href='//i.xiamuyourenzhang.cn' />
+    <!-- 加载资源 -->
+    <link rel="stylesheet" href="https://i.xiamuyourenzhang.cn/css/post.css">
+    <link rel="stylesheet" href="../assets/css/tp.css">
+	<link href="../assets/css/prism.css" type="text/css" rel="stylesheet" />	
+    <link rel="icon" href="https://i.xiamuyourenzhang.cn/favicon.ico"></head>
+  <body>
+    <div class="inner">
+      <h2>【文章标题】 </h2>
+
+		【文章内容】
+		
+	   <div class="align-right">
+		<span>【管理员名称】 最后更新于</span>
+	   </div>
+	   <div class="align-right">
+		<span>【发布时间2】</span>
+	   </div>
+	   
+		<div class="pager">
+		【上一篇】
+		【下一篇】
+		</div>	   
+	   
+		<div class="vcomment"></div>
+          <script src="https://cdn.jsdelivr.net/npm/valine"></script>      
+          <!-- <script src="/script/Valine.min.js"></script>   -->
+          <script>
+            var valine = new Valine();
+            var path = window.location.pathname.replace('','');
+            var isEN = path.indexOf('en') > -1;
+            path = isEN ? path.replace('en/','') : path;
+            valine.init({
+                el: '.vcomment',
+                appId: 'EO29uphWFNAI1y6rt7IMPk4X-gzGzoHsz',
+                appKey: 'MNpLsezYvd8eMNKJbcel6HyL',
+				verify: false,
+				notify: false,
+                placeholder: 'Just Go Go.',
+                avatar:'mm',
+                path:path,
+                lang: isEN ? 'en' : 'zh-cn',
+                visitor:true
+            })
+          </script>  
+    <link rel="stylesheet" href="../assets/css/pl.css">		  
+    </div>
+	<script src="https://s2.pstatp.com/cdn/expire-1-M/jquery/2.1.0/jquery.min.js" type="application/javascript"></script>
+	<script src="../assets/js/view-image.min.js"></script>	
+    <script src="https://i.xiamuyourenzhang.cn/js/main.js"></script>
+	<script>
+		jQuery(document).ready(function () {
+			jQuery.viewImage({
+				'target': '.inner img',
+				'exclude': '.exc',
+				'delay': 300
+			});
+		});
+	</script>
+	<script src="../assets/js/moe.js"></script>
+	<script src="../assets/js/prism.js" type="application/javascript"></script>		
+  </body>
+
+</html>

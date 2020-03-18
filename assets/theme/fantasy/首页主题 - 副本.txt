@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="【网站关键词】">
+    <meta name="description" content="【网站描述】" />
+    <link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="【首页地址】atom.xml" />
+    <title>【网站标题】 - 【首页描述】</title>
+    <link rel="icon" href="https://i.xiamuyourenzhang.cn/favicon.ico">
+    <link rel="stylesheet" href="https://i.xiamuyourenzhang.cn/fantasystyle.css">
+    <script type="text/javascript" src="https://s3.pstatp.com/cdn/expire-1-M/jquery/1.11.1/jquery.min.js"></script>
+    <!-- DNS预解析 -->
+    <link rel='dns-prefetch' href='//i.xiamuyourenzhang.cn' />
+    <link rel='dns-prefetch' href='//pstatp.com' /></head>
+	<style type="text/css">
+	.js-load-more{
+		padding:0 15px;
+		width:120px;
+		height:30px;
+		background-color:#999;
+		color:#fff;
+		line-height:30px;
+		text-align:center;
+		border-radius:5px;
+		margin:20px auto;
+		border:0 none;
+		font-size:16px;
+		display:none;/*默认不显示，ajax调用成功后才决定显示与否*/
+	}	
+	</style>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="/" class="logo">
+          <img src="https://i.xiamuyourenzhang.cn/tx.jpeg" alt="夏目友人帐" /></a>
+        <div class="description">
+          <h1>【网站标题】</h1>
+          <h2>【网站描述】</h2>
+          <nav>
+            <div class="bitcron_nav_container">
+              <div class="bitcron_nav">
+                <div class="mixed_site_nav_wrap site_nav_wrap">
+                  <ul class="mixed_site_nav site_nav sm sm-base">
+                    <li>
+                      <a href="【首页地址】" class="nav__item">首页</a></li>
+                    <li>
+                      <a class=" nav__item" href="【首页地址】article/4.html">作品</a></li>
+                    <li>
+                      <a class=" nav__item" href="【首页地址】article/5.html">友人</a></li>
+                    <li>
+                      <a class=" nav__item" href="【首页地址】search.html">搜索</a></li>
+                    <li>
+                      <a class=" nav__item" href="【首页地址】atom.xml" target="_blank">订阅</a></li>
+                    <li>
+                      <a class=" nav__item" href="【首页地址】article/3.html">关于</a></li>					  
+                  </ul>
+                  <div class="clear clear_nav_inline_end"></div>
+                </div>
+              </div>
+              <div class="clear clear_nav_end"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="article-list js-blog-list">
+		<article><h2><a href="【首页地址】article/2.html">Chronicle静态博客生成器介绍</a></h2><div class="meta"><span class="item"><i class="iconfont icon-calendar"></i><time datetime="2020年02月20日 12:55:46">2020年02月20日</time></span><span class="item"><i class="iconfont icon-tag"></i>1.3k/4min</span><font color="red">【手工置顶】</font></div></article>
+		<article><h2><a href="【首页地址】article/1.html">“易语言”打造属于自己的静态博客生成器</a></h2><div class="meta"><span class="item"><i class="iconfont icon-calendar"></i><time datetime="2020年02月22日 16:13:05">2020年02月22日</time></span><span class="item"><i class="iconfont icon-tag"></i>3.4k/12min</span><font color="red">【手工置顶】</font></div></article>
+		<!-- 【首页列表】 -->	
+				  
+        </section>
+        <section class="list-pager">
+		   <div class="js-load-more">加载更多</div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <span>&copy; 2020 <a href="【首页地址】sitemap.html" target="_blank">【网站标题】</a></span>
+      <span>&hearts; Theme By
+        <a href="https://www.xde.io/" target="_blank">Xingr</a></span>
+      <div class="powered_by">
+        <span>Powered by</span>
+        <a href="https://xiamuyourenzhang.cn/article/2.html" target="_blank">Chronicle 静态博客生成器</a></div>
+
+        <span>闽ICP备14002885号-6</span> &amp; 
+        <a href="http://www.beian.miit.gov.cn/" target="_blank">闽公网安备35042602000063</a>	
+      <div class="footer_slogan"></div>
+    </footer>
+    <link rel="stylesheet" href="https://i.xiamuyourenzhang.cn/fantasyfonts.css">
+	<script src="../assets/js/zepto.min.js"></script>
+	<script src="../assets/js/page-ajax.js"></script>	
+    <!-- <script src="https://cdn.staticfile.org/highlight.js/9.13.1/highlight.min.js"></script> -->
+    <!-- <script>hljs.initHighlightingOnLoad();</script> -->
+    <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and (max-width:580px){.back_to_top{display:none!important}}</style>
+    <a id="back_to_top" href="#" class="back_to_top">
+      <span>△</span></a>
+    <script>$(document).ready((function(_this) {
+        return function() {
+          var bt;
+          bt = $('#back_to_top');
+          if ($(document).width() > 480) {
+            $(window).scroll(function() {
+              var st;
+              st = $(window).scrollTop();
+              if (st > 30) {
+                return bt.css('display', 'block')
+              } else {
+                return bt.css('display', 'none')
+              }
+            });
+            return bt.click(function() {
+              $('body,html').animate({
+                scrollTop: 0
+              },
+              800);
+              return false
+            })
+          }
+        }
+      })(this));
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target: $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              },
+              500);
+              return false
+            }
+          }
+        })
+      });</script>
+	<script type="module" src="https://i.xiamuyourenzhang.cn/instantpage.js"></script>		  
+  </body>
+
+</html>

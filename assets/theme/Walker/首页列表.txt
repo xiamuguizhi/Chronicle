@@ -1,0 +1,14 @@
+    <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }"> 
+     <a href="【文章链接3】" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40"> 
+      <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'【文章封面】'" style="background-image: url(&quot;【文章封面】&quot;);"> 
+      </div> </a> 
+     <div class="content"> 
+      <a href="【文章链接3】"> <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">【文章标题】</h2></a><font></font>
+      <div class="post-abstract text-gray-700 font-light my-4">
+		<p class="syms">【文章页面描述】</p>	  
+      </div> 
+      <div class="text-gray-400 text-sm font-light">
+       【发布时间】 / 【文章字数】
+      </div> 
+     </div> 
+    </section> 
