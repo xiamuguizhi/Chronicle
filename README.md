@@ -8,7 +8,7 @@ Chronicle是使用易语言开发，搭配“Editor.md”编辑器。可以使�
 
   - 建议本地开启web服务调试，更加方便~
 
-3 .支持RSS,支持分页,有搜索功能分页功能（Ps:虽然不完善..）
+3. 支持RSS,支持分页,有搜索功能分页功能（Ps:虽然不完善..）
 
 4. SEO优化，支持百度收录
 
@@ -25,5 +25,6 @@ Chronicle是使用易语言开发，搭配“Editor.md”编辑器。可以使�
 ![](https://xiamuyourenzhang.cn/img/1/2020-0216-2304-56.jpg?x-oss-process=style/img)
 
 > 如出现：LocalStorage 文件 或者  *.dat文件 属于正常现象 是精易web游览器生成的
+
 > 感谢"油油"期间的鼓励！！油油网址：http://cnm.nmsl.wang/
 
