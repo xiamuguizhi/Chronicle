@@ -28,3 +28,12 @@ Chronicle是使用易语言开发，搭配“Editor.md”编辑器。可以使�
 
 > 感谢"油油"期间的鼓励！！油油网址：http://cnm.nmsl.wang/
 
+## 软件截图
+
+![](https://raw.githubusercontent.com/xiamuguizhi/Chronicle/master/%E8%BD%AF%E4%BB%B6%E6%88%AA%E5%9B%BE/TIM%E6%88%AA%E5%9B%BE20200318174519.png)
+![](https://raw.githubusercontent.com/xiamuguizhi/Chronicle/master/%E8%BD%AF%E4%BB%B6%E6%88%AA%E5%9B%BE/TIM%E6%88%AA%E5%9B%BE20200318174603.png)
+![](https://raw.githubusercontent.com/xiamuguizhi/Chronicle/master/%E8%BD%AF%E4%BB%B6%E6%88%AA%E5%9B%BE/TIM%E6%88%AA%E5%9B%BE20200318180518.png)
+
+## 网站预览
+
+![image](https://github.com/user-attachments/assets/6f36b7c6-d419-4af2-8657-6b13de6bf23e)
