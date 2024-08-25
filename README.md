@@ -15,11 +15,11 @@ Chronicle是使用易语言开发，搭配“Editor.md”编辑器。可以使�
 5. 不需要额外服务器，你只需存放在github、七牛云、阿里云oss、腾讯云等支持HTML静态页面的云存储
 
 
-- Chronicle静态博客生成器介绍：https://xiamuyourenzhang.cn/article/2.html
+- Chronicle静态博客生成器介绍：https://weebs.neocities.org/article/2.html
 
-- 易语言Chronicle静态博客生成器基本使用：https://xiamuyourenzhang.cn/article/19.html
+- 易语言Chronicle静态博客生成器基本使用：https://weebs.neocities.org/article/19.html
 
-- “易语言”打造属于自己的静态博客生成器：https://xiamuyourenzhang.cn/article/1.html
+- “易语言”打造属于自己的静态博客生成器：https://weebs.neocities.org/article/1.html
 
 ![](https://xiamuyourenzhang.cn/img/19/2020-0318-1607-33.jpg?x-oss-process=style/img)
 ![](https://xiamuyourenzhang.cn/img/1/2020-0216-2304-56.jpg?x-oss-process=style/img)
